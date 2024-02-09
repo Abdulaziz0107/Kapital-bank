@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="comments/comment.css" />
+    <title>Comments</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header_top">
+        <div class="left">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html">Bosh sahifa</a></li>
+            <li class="nav-item"><a href="about.html">Bank haqida</a></li>
+            <li class="nav-item"><a href="services.html">Xizmatlar</a></li>
+            <li class="nav-item"><a href="comment.html">Fikrlar</a></li>
+            <li class="nav-item"><a href="contact.html">Aloqa</a></li>
+          </ul>
+          <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <h2 class="text-center mt mt-2" style="font-family: Roboto Slab, serif">
+          <i class="fa-solid fa-building-columns"></i> Kapital bank
+        </h2>
+        <div class="right">
+          <button
+            class="btn btn-primary"
+            style="border: 2px solid black; font-family: Roboto Slab, serif"
+          >
+            Login <i style="font-size: 14px" class="fa-solid fa-user"></i>
+          </button>
+          <button
+            class="btn btn-success"
+            style="border: 2px solid black; font-family: Roboto Slab, serif"
+          >
+            <i style="font-size: 14px" class="fa-solid fa-right-to-bracket"></i>
+            Kirish
+          </button>
+        </div>
+      </div>
+      <hr id="hr" />
+    </header>
+    <!-- header end -->
+
+    <section class="mt mt-5">
+      <h1 class="text-center">
+        Izoh qo`shish <i class="fa-regular fa-comment"></i>
+      </h1>
+      <form action="" method="post">
+        <h3>Ismingiz:</h3>
+        <input
+          class="form-control"
+          name="name"
+          type="text"
+          placeholder="ismingizni kiriting"
+          required
+        />
+        <br />
+        <h3>Izoh:</h3>
+        <textarea
+          class="form-control"
+          name="comment"
+          cols="40"
+          rows="8"
+          placeholder="Izohni yozib qoldiring"
+        ></textarea>
+        <input
+          type="submit"
+          value="Отправить"
+          class="btn btn-primary mt mt-2"
+        />
+      </form>
+      <div class="comments mt mt-4">
+        <h1 class="text-center">
+          Foydalanuvchilarning izohlari <i class="fa-regular fa-comments"></i>
+        </h1>
+        <div class="card">
+          <h5 class="card-header">
+            <small>Muallif:</small>
+            <strong>User1</strong>
+            <small>/ 04.02.2023</small>
+          </h5>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            <div class="button">
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header">
+            <small>Muallif:</small>
+            <strong>User2</strong>
+            <small>/ 04.02.2023</small>
+          </h5>
+          <div class="card-body">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing.
+            </p>
+            <div class="button">
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <h5 class="card-header">
+            <small>Muallif:</small>
+            <strong>User3</strong>
+            <small>/ 04.02.2023</small>
+          </h5>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="button">
+              <a href="#" class="btn btn-danger">Delete</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="mt mt-5">
+      <h2
+        class="text-center pt pt-3"
+        style="font-family: Roboto Slab, serif; font-weight: 700"
+      >
+        &copy Kapital Bank <i class="fa-solid fa-building-columns"></i>
+      </h2>
+      <div class="icons">
+        <i class="fa-brands fa-instagram" style="color: #ff00ea"></i>
+        <i class="fa-brands fa-telegram" style="color: #74c0fc"></i>
+        <i class="fa-brands fa-facebook" style="color: #4626e8"></i>
+        <i class="fa-brands fa-youtube" style="color: #ff0000"></i>
+        <i class="fa-brands fa-twitter" style="color: #74c0fc"></i>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script src="menu-js/script.js"></script>
+  </body>
+</html>
